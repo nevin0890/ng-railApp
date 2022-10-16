@@ -8,9 +8,11 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewalltrainsComponent } from './viewalltrains/viewalltrains.component';
+import { BindingComponent } from './binding/binding.component';
 
 const routes: Routes = [
   { path: '', component: ViewalltrainsComponent },
+  { path: 'binding', component: BindingComponent },
   
 ]
 
@@ -18,7 +20,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     NavbarComponent,
-    ViewalltrainsComponent
+    ViewalltrainsComponent,
+    BindingComponent
   ],
   imports: [
     BrowserModule,
