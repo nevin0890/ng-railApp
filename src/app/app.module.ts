@@ -9,10 +9,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewalltrainsComponent } from './viewalltrains/viewalltrains.component';
 import { BindingComponent } from './binding/binding.component';
+import { ViewAllComponent } from './view-all/view-all.component';
 
 const routes: Routes = [
   { path: '', component: ViewalltrainsComponent },
   { path: 'binding', component: BindingComponent },
+  { path: 'viewall', component: ViewAllComponent }
   
 ]
 
@@ -21,7 +23,8 @@ const routes: Routes = [
     AppComponent,
     NavbarComponent,
     ViewalltrainsComponent,
-    BindingComponent
+    BindingComponent,
+    ViewAllComponent
   ],
   imports: [
     BrowserModule,
