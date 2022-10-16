@@ -7,15 +7,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ViewalltrainsComponent } from './viewalltrains/viewalltrains.component';
 
 const routes: Routes = [
+  { path: '', component: ViewalltrainsComponent },
   
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewalltrainsComponent
   ],
   imports: [
     BrowserModule,
